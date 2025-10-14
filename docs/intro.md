@@ -1,47 +1,46 @@
 ---
+slug: /
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Вступ
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Давайте розбиратись, що ж то таке цей **Кабінет Інвестора**.
 
-## Getting Started
+В цій документації ви знайдете інструкції про:
 
-Get started by **creating a new site**.
+## Реєстрація в Кабінеті Інвестора
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Щоб зареєструватись в [Кабінеті Інвестора](https://trading.btc-broker.com/uk/) (надалі КІ) вам знадобиться **телефон**, **ємейл**, **застосунок Дія** або **ваші паспортні дані та файли - скан копії ваших документів**.
 
-### What you'll need
+Ось так **ми можемо писати жирний текст** а ось так вставляти посилання, наприклад на [наш ТГ канал](https://t.me/btcbroker_news), а ось так робити одночасно і жирний текст і посилання --> **[І знову наш ТГ канал, хоча варто б було вже розповсюджувати Ватсап](https://t.me/btcbroker_news)**.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Швидка і зручна за допомогою Дії
 
-## Generate a new site
+- також можемо створювати прості списки як
+- наприклад
+- ось цей
+- список
 
-Generate a new Docusaurus site using the **classic template**.
+  - та робити
+  - вкладені
+  - списки
+    - з будь яким
+    - рівнем
+    - вкладенності
 
-The classic template will automatically be added to your project after you run the command:
+### Менш швидка і менш зручна з ручним заповненням
 
-```bash
-npm init docusaurus@latest my-website classic
+Що тут додати
+
+## Поповнення особистого рахунку
+
+```
+Таким чином можемо вставляти виділений текст, як ось цитати або ключевий месседж
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Торгівля ЦП
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Також є можливість `виділяти слова прям в тексті` якщо вона вам знадобиться.
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+🔸 Взагалі в 📄документації📄 так не прийнято, але хтось ж вас 🛑зупинить🛑 від використання 😏`emoji`😏 прям в тексті 🔸

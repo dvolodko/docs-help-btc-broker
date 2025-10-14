@@ -1,0 +1,9 @@
+{
+  "label": "Реєстрація та логін",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Як зареєструватись в Кабінеті Інвестора та як логінитись в подальшому",
+    "slug": "/category/registration-and-login"
+  }
+}
