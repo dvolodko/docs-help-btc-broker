@@ -29,16 +29,19 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.img-preview {
-  display: block;
-  max-width: 100%;
+.img-thumb {
   max-width: 640px;
-  max-height: 640px;
-  border-radius: 8px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
 }
 
-img.medium-zoom-image {
-  cursor: pointer;
+.img-preview {
+  display: block;
+  max-height: 640px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* img.medium-zoom-image {
+  cursor: pointer;
+} */
