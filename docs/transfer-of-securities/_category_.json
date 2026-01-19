@@ -1,0 +1,9 @@
+{
+  "label": "Переміщення цінних паперів на брокерський рахунок",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Переміщення цінних паперів в Кабінет Інвестора",
+    "slug": "/category/transfer-of-securities"
+  }
+}
