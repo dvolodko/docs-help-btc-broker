@@ -1,0 +1,287 @@
+---
+title: Опис запитів до котирувань Кабінета інвестора та відповідей
+description: Опис запитів до котирувань Кабінета інвестора та відповідей
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Запити до API Кабінета інвестора
+
+Тут продемонструю як можна забирати з кабінета інвестора дані про цінні папери. Наразі доступні дані про наявні ОВДП, ОЗДП та Акції іноземних компаній
+
+## ОВДП
+
+Щоб отримати дані про ОВДП слід відправити POST запит за адресою **`https://trading.btc-broker.com/uk/api/getAssets`**, де в тіло запиту додаємо сире значення `0`
+
+**URL:** `https://trading.btc-broker.com/uk/api/getAssets`\
+**Method:** `POST`\
+**Request Body(raw):** `0`
+
+### Запит
+
+```bash
+POST /uk/api/getAssets HTTP/1.1
+Host: trading.btc-broker.com
+Content-Type: application/json
+
+0
+```
+
+### Відповідь
+
+<details>
+<summary>Натисніть, щоб побачити повну JSON відповідь</summary>
+
+```json title="response.json"
+{
+  //Це кількість доступних ОВДП
+  "count": 2,
+  "results": [
+    {
+      "title": "231559",
+      "company": "Міністерство фінансів України",
+      //Ціна продажу
+      "price": 1024.68,
+      //Ціна купівлі
+      "sell_price": 1016.7,
+      //Код валюти
+      "price_currency": 980,
+      //Рядкове значення валюти
+      "price_currency_detail": "UAH",
+      "price_update_date": null,
+      "trend": null,
+      "order": 0,
+      //ISIN
+      "isin": "UA4000231559",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      //Дата погашення
+      "maturity_date": "2026-06-10",
+      "currency": 980,
+      "currency_detail": "UAH",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      //Дохідність продажу
+      "annual_rate": 14.0,
+      //Дохідність купівлі
+      "sell_annual_rate": 16.25,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    },
+    {
+      "title": "234215",
+      "company": "Міністерство фінансів України",
+      "price": 1017.73,
+      "sell_price": 1007.1,
+      "price_currency": 980,
+      "price_currency_detail": "UAH",
+      "price_update_date": null,
+      "trend": null,
+      "order": 1,
+      "isin": "UA4000234215",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      "maturity_date": "2026-06-24",
+      "currency": 980,
+      "currency_detail": "UAH",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      "annual_rate": 14.0,
+      "sell_annual_rate": 16.75,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    }
+  ]
+}
+```
+
+</details>
+
+## ОЗДП
+
+Щоб отримати дані про ОЗДП слід відправити POST запит за адресою **`https://trading.btc-broker.com/uk/api/getAssets`**, де в тіло запиту додаємо сире значення `1`
+
+**URL:** `https://trading.btc-broker.com/uk/api/getAssets`\
+**Method:** `POST`\
+**Request Body(raw):** `1`
+
+### Запит
+
+```bash
+POST /uk/api/getAssets HTTP/1.1
+Host: trading.btc-broker.com
+Content-Type: application/json
+
+1
+```
+
+### Відповідь
+
+<details>
+<summary>Натисніть, щоб побачити повну JSON відповідь</summary>
+
+```json title="response.json"
+{
+  //Кількість доступних ОЗДП
+  "count": 2,
+  "results": [
+    {
+      "title": "XS5981",
+      "company": "Міністерство фінансів України",
+      //Ціна продажу
+      "price": 33.02,
+      //Ціна купівлі
+      "sell_price": 30.0,
+      //Код валюти
+      "price_currency": 840,
+      //Рядкове значення валюти
+      "price_currency_detail": "USD",
+      "price_update_date": null,
+      "trend": null,
+      "order": 0,
+      //ISIN
+      "isin": "XS2895055981",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      //Дата погашення
+      "maturity_date": "2029-02-01",
+      "currency": 840,
+      "currency_detail": "USD",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      //Дохідність продажу
+      "annual_rate": 17.22,
+      //Дохідність купівлі
+      "sell_annual_rate": 21.44,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    },
+    {
+      "title": "XS6872",
+      "company": "Міністерство фінансів України",
+      "price": 0.0,
+      "sell_price": 23.51,
+      "price_currency": 840,
+      "price_currency_detail": "USD",
+      "price_update_date": null,
+      "trend": null,
+      "order": 1,
+      "isin": "XS2895056872",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      "maturity_date": "2030-02-01",
+      "currency": 840,
+      "currency_detail": "USD",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      "annual_rate": 0.0,
+      "sell_annual_rate": 19.47,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    }
+  ]
+}
+```
+
+</details>
+
+## Акції іноземних компаній
+
+Щоб отримати дані про Акції іноземних компаній слід відправити POST запит за адресою **`https://trading.btc-broker.com/uk/api/getAssets`**, де в тіло запиту додаємо сире значення `2`
+
+**URL:** `https://trading.btc-broker.com/uk/api/getAssets`\
+**Method:** `POST`\
+**Request Body(raw):** `2`
+
+### Запит
+
+```bash
+POST /uk/api/getAssets HTTP/1.1
+Host: trading.btc-broker.com
+Content-Type: application/json
+
+2
+```
+
+### Відповідь
+
+<details>
+<summary>Натисніть, щоб побачити повну JSON відповідь</summary>
+
+```json title="response.json"
+{
+  //Кількість доступних Акцій іноземних компаній
+  "count": 2,
+  "results": [
+    {
+      //Тікер
+      "title": "AMZN",
+      //Назва компанії
+      "company": "AMAZON.COM, INC",
+      //Ціна продажу
+      "price": 10899.0,
+      //Ціна купівлі
+      "sell_price": 9491.69,
+      //Код валюти
+      "price_currency": 840,
+      //Рядкове значення валюти
+      "price_currency_detail": "USD",
+      "price_update_date": null,
+      "trend": null,
+      "order": 0,
+      //ISIN
+      "isin": "US0231351067",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      "maturity_date": null,
+      "currency": 840,
+      "currency_detail": "USD",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      "annual_rate": 0.0,
+      "sell_annual_rate": 0.0,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    },
+    {
+      "title": "AAPL",
+      "company": "APPLE INC.",
+      "price": 11210.0,
+      "sell_price": 10136.8,
+      "price_currency": 840,
+      "price_currency_detail": "USD",
+      "price_update_date": null,
+      "trend": null,
+      "order": 1,
+      "isin": "US0378331005",
+      "type": null,
+      "type_detail": null,
+      "description": null,
+      "issue_date": null,
+      "maturity_date": null,
+      "currency": 840,
+      "currency_detail": "USD",
+      "face_value": 0.0,
+      "exit_value": 0.0,
+      "annual_rate": 0.0,
+      "sell_annual_rate": 0.0,
+      "last_payment_date": null,
+      "accrued_interest": 0.0
+    }
+  ]
+}
+```
+
+</details>
